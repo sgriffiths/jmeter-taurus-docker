@@ -1,0 +1,6 @@
+.DS_Store
+taurus/.DS_Store
+jmeter.log
+taurus/pt/scripts/
+taurus/pt/workingdirectory/**/
+taurus/uat/workingdirectory/*
