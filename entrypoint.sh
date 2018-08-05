@@ -3,5 +3,5 @@
 set -e
 cd /usr/pt/workingdirectory/
 
-#Runs blazemeter taurus wich executes whats in the config.yaml and points jmeter that was copied across
+#Runs blazemeter taurus which executes the settings in the config.yaml and points jmeter 4.0.2
 bzt ../config.yaml -o modules.jmeter.path=/usr/local/apache-jmeter-4.0.2/bin/jmeter
