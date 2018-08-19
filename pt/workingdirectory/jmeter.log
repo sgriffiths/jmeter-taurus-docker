@@ -1,13 +1,14 @@
-2018-08-19 05:35:20,843 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
-2018-08-19 05:35:20,916 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=linux-ea5a0981ef01c84ac531858651b56529-nongui
-2018-08-19 05:35:23,182 INFO o.j.r.PluginManager: Plugins Status: [jpgc-casutg=2.5, jpgc-plugins-manager=1.2, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
-2018-08-19 05:35:23,186 INFO o.j.r.PluginManagerCMD: Params line is: /usr/pt/scripts/modified_testscript.jmx
-2018-08-19 05:35:23,211 WARN o.j.r.p.TestPlanAnalyzer: Cannot parse file: /usr/pt/scripts/modified_testscript.jmx
+2018-08-19 17:32:53,976 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2018-08-19 17:32:54,013 WARN o.j.r.PluginManager: Found JAR conflict: /Users/nsgs3/jmeter-4.0/lib/ext/jmeter-plugins-manager-1.1.jar and /Users/nsgs3/jmeter-4.0/lib/ext/jmeter-plugins-manager-1.2.jar
+2018-08-19 17:32:54,108 INFO o.j.r.JARSourceHTTP: Found cached repo
+2018-08-19 17:32:54,263 INFO o.j.r.PluginManager: Plugins Status: [jpgc-casutg=2.5, jpgc-plugins-manager=1.2, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+2018-08-19 17:32:54,264 INFO o.j.r.PluginManagerCMD: Params line is: /Users/nsgs3/Documents/jmeter-taurus-docker/pt/scripts/modified_testscript.jmx
+2018-08-19 17:32:54,276 WARN o.j.r.p.TestPlanAnalyzer: Cannot parse file: /Users/nsgs3/Documents/jmeter-taurus-docker/pt/scripts/modified_testscript.jmx
 org.xml.sax.SAXParseException: XML version "1.1' encoding='UTF-8'?>
 <jmeterTestPlan version=" is not supported, only XML 1.0 and XML 1.1 are supported.
 	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:?]
 	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source) ~[xercesImpl-2.11.0.jar:?]
-	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:122) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:121) ~[?:1.8.0_172]
 	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.getNodeListWithClassNames(TestPlanAnalyzer.java:95) [jmeter-plugins-manager-1.2.jar:?]
 	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.analyze(TestPlanAnalyzer.java:33) [jmeter-plugins-manager-1.2.jar:?]
 	at org.jmeterplugins.repository.plugins.PluginSuggester.analyzeTestPlan(PluginSuggester.java:51) [jmeter-plugins-manager-1.2.jar:?]
@@ -15,9 +16,9 @@ org.xml.sax.SAXParseException: XML version "1.1' encoding='UTF-8'?>
 	at org.jmeterplugins.repository.PluginManagerCMD.processParams(PluginManagerCMD.java:79) [jmeter-plugins-manager-1.2.jar:?]
 	at kg.apc.cmdtools.PluginsCMD.processParams(PluginsCMD.java:62) [cmdrunner-2.2.jar:?]
 	at kg.apc.cmdtools.PluginsCMD.processParams(PluginsCMD.java:21) [cmdrunner-2.2.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_172]
 	at kg.apc.cmd.UniversalRunner.main(UniversalRunner.java:115) [cmdrunner-2.2.jar:?]
-2018-08-19 05:35:23,227 INFO o.j.r.PluginManager: Finishing without changes
+2018-08-19 17:32:54,284 INFO o.j.r.PluginManager: Finishing without changes
