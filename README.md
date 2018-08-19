@@ -8,7 +8,7 @@ Docker and git installed
 git clone https://github.com/sgriffiths/jmeter-taurus-docker.git
 
 ### To Run:
-docker-compose run {env}
+docker-compose run {env}\
 Ie docker-compose run dev
 
 ### Enviroments available:
