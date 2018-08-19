@@ -11,7 +11,7 @@ ENV PLUGINS_PATH $JMETER_PATH/plugins
 # Add test scripts an entrypoint
 COPY /jmeter/pt /usr/
 COPY /jmeter/uat /usr/
-COPY /jmeter/test /usr/
+COPY /jmeter/dev /usr/
 COPY /jmeter/entrypoint.sh /usr
 RUN mkdir -p /usr/logs
 
