@@ -1,7 +1,7 @@
 # jmeter-taurus-docker
 Loadtesting using jmeter and taurus with results published to ElasticSearch
 
-#Required:
+# Required:
 Docker and git installed
 
 # Clone the repo:
@@ -18,7 +18,7 @@ dev, uat, pt
 Uses Jmeter 4.0.2
 also uses the https://hub.docker.com/r/scottyg/jmeter-taurus-elastic/ image
 
-# To run manually:
+## To run manually:
 BZT: 
 bzt ../config.yaml (from the {env} workingdirectory)
 
