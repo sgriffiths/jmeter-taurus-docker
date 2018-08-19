@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="428" lt="0" ts="1534656949386" s="false" lb="GET - Blazemeter" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="Sample thread concurrency 1-1" dt="text" de="" by="2732" ng="1" na="1">
+  <assertionResult>
+    <name>Response code</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to contain /200/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Content-Type: application/json
+Host: blazedemo.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/10.0.2)
+</requestHeader>
+  <responseData class="java.lang.String">java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:278)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:286)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.jmeter.protocol.http.sampler.hc.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:199)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.receiveResponseHeader(MeasuringConnectionManager.java:212)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:684)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:697)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:455)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1189)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1178)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:416)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:250)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://blazedemo.com/reserve.php</java.net.URL>
+</httpSample>
+
+</testResults>

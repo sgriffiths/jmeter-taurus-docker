@@ -1,0 +1,10 @@
+---
+execution:
+- executor: jmeter
+  scenario:
+    script: ../scripts/testscript.jmx
+    data-sources:
+      - ../datafiles/testDataFileDev.csv
+  concurrency: 1
+  ramp-up: 30s
+  hold-for: 1m

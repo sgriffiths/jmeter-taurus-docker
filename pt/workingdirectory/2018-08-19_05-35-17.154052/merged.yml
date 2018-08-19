@@ -1,0 +1,14 @@
+---
+execution:
+- concurrency: 1
+  hold-for: 2m
+  ramp-up: 1m
+  scenario:
+    data-sources:
+    - ../datafiles/test.csv
+    script: ../scripts/testscript.jmx
+  steps: 1
+settings:
+  check-interval: 5s
+  default-executor: jmeter
+

@@ -1,0 +1,57 @@
+version: "2.2"
+
+services:
+  pt:
+    build:
+      context: .
+    image: scottyg/jmeter-taurus-elastic
+    environment:
+      ENV: ${PT}
+      THREADS: ${Threads}
+      STEPS: ${Steps}
+      RAMPUP: ${Rampup}
+      HOLD: ${Hold}
+      PASSWORD: ${Password}
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 999999
+        hard: 999999
+    volumes:
+      - ./pt/workingdirectory:/usr/pt/workingdirectory/
+  uat:
+    build:
+      context: .
+    image: scottyg/jmeter-taurus-elastic
+    environment:
+      ENV: ${UAT}
+      THREADS: ${Threads}
+      STEPS: ${Steps}
+      RAMPUP: ${Rampup}
+      HOLD: ${Hold}
+      PASSWORD: ${Password}
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 999999
+        hard: 999999
+    volumes:
+      - ./uat/workingdirectory:/usr/uat/workingdirectory/
+  dev:
+    build:
+      context: .
+    image: scottyg/jmeter-taurus-elastic
+    environment:
+      ENV: ${DEV}
+      THREADS: ${Threads}
+      STEPS: ${Steps}
+      RAMPUP: ${Rampup}
+      HOLD: ${Hold}
+      PASSWORD: ${Password}
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 999999
+        hard: 999999
+    volumes:
+      - ./dev/workingdirectory:/usr/dev/workingdirectory/

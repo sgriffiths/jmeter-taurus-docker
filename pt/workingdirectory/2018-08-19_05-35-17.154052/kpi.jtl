@@ -1,0 +1,33 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1534656926643,1076,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,1075,afb9263a4fa6,292
+1534656927731,694,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,686,afb9263a4fa6,2
+1534656928426,680,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,675,afb9263a4fa6,3
+1534656929107,679,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,672,afb9263a4fa6,6
+1534656929789,789,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,789,afb9263a4fa6,4
+1534656930538,771,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,751,afb9263a4fa6,6
+1534656931311,674,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,673,afb9263a4fa6,7
+1534656931986,922,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,917,afb9263a4fa6,4
+1534656932911,668,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,656,afb9263a4fa6,7
+1534656933584,691,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,685,afb9263a4fa6,3
+1534656934278,663,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,653,afb9263a4fa6,2
+1534656934945,694,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,692,afb9263a4fa6,3
+1534656935648,695,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,694,afb9263a4fa6,2
+1534656936345,656,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,648,afb9263a4fa6,2
+1534656937004,738,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10463,1,1,732,afb9263a4fa6,4
+1534656937744,693,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,689,afb9263a4fa6,2
+1534656938439,664,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,658,afb9263a4fa6,2
+1534656939104,672,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,662,afb9263a4fa6,2
+1534656939778,772,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,766,afb9263a4fa6,4
+1534656940554,672,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,669,afb9263a4fa6,4
+1534656941228,660,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,653,afb9263a4fa6,3
+1534656941890,793,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,783,afb9263a4fa6,1
+1534656942685,859,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,852,afb9263a4fa6,3
+1534656943549,665,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,655,afb9263a4fa6,7
+1534656944215,710,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,686,afb9263a4fa6,2
+1534656944927,758,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,749,afb9263a4fa6,2
+1534656945686,815,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,814,afb9263a4fa6,2
+1534656946502,696,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10463,1,1,686,afb9263a4fa6,2
+1534656947199,662,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,654,afb9263a4fa6,3
+1534656947866,847,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,841,afb9263a4fa6,2
+1534656948714,671,GET - Blazemeter,200,OK,Sample thread concurrency 1-1,true,10462,1,1,670,afb9263a4fa6,1
+1534656949386,428,GET - Blazemeter,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,Sample thread concurrency 1-1,false,2732,1,1,0,afb9263a4fa6,10
