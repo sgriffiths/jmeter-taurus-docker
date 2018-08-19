@@ -5,6 +5,9 @@ services:
     build:
       context: .
     image: scottyg/jmeter-taurus-elastic
+    networks:
+      elastic-esrally-network:
+        ipv4_address: 172.18.0.6
     environment:
       ENV: ${PT}
       THREADS: ${Threads}
@@ -23,6 +26,9 @@ services:
     build:
       context: .
     image: scottyg/jmeter-taurus-elastic
+    networks:
+      elastic-esrally-network:
+        ipv4_address: 172.18.0.6
     environment:
       ENV: ${UAT}
       THREADS: ${Threads}
@@ -41,6 +47,9 @@ services:
     build:
       context: .
     image: scottyg/jmeter-taurus-elastic
+    networks:
+      elastic-esrally-network:
+        ipv4_address: 172.18.0.6
     environment:
       ENV: ${DEV}
       THREADS: ${Threads}
@@ -55,3 +64,6 @@ services:
         hard: 999999
     volumes:
       - ./dev/workingdirectory:/usr/dev/workingdirectory/
+networks:
+    elastic-esrally-network:
+       external: true
