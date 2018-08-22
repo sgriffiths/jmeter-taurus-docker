@@ -8,6 +8,13 @@ ENV JMETER_HOME=/usr/local/apache-jmeter-${JMETER_VERSION}
 ENV PATH=${JMETER_HOME}/bin:${PATH}
 ENV PLUGINS_PATH $JMETER_PATH/plugins
 
+#Install Pip - which is required by Taurus
+RUN apt-get update && apt-get install -y \
+    python-pip
+
+#RUN pip install
+RUN pip install bzt
+
 # Add test scripts an entrypoint
 COPY /pt /usr/
 COPY /uat /usr/
