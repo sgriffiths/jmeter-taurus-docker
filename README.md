@@ -8,7 +8,8 @@ Docker and git installed
 git clone https://github.com/sgriffiths/jmeter-taurus-docker.git && cd jmeter-taurus-docker
 
 ### To Run:
-docker-compose run {env}\
+docker-compose run {env}
+
 Ie docker-compose run dev
 
 ### Enviroments available:
@@ -23,7 +24,8 @@ BZT:\
 bzt ../config.yaml (from the {env} workingdirectory)
 
 ### BZT with jmeter GUI: 
-cd /pt/workingdirectory\
+cd /pt/workingdirectory
+
 bzt ../config.yaml -gui
 
 ### Jmeter Non Gui: 

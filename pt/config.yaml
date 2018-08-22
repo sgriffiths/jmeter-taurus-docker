@@ -6,7 +6,7 @@ execution:
   scenario:
     script: ../scripts/testscript.jmx
     data-sources:
-      - ../datafiles/test.csv
+      - ../datafiles/testDataFilePt.csv
 settings:
   check-interval: 5s
   default-executor: jmeter

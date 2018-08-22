@@ -16,18 +16,14 @@ RUN apt-get update && apt-get install -y \
 RUN pip install bzt
 
 # Add test scripts an entrypoint
+COPY /bzt_file /root
 COPY /pt /usr/
 COPY /uat /usr/
 COPY /dev /usr/
 COPY /entrypoint.sh /usr
 RUN mkdir -p /usr/logs
 
-# Copy Jmeter 4.0 to local directory in Docker container
+# Copy Jmeter 4.0.2 to local directory in Docker container
 COPY jmeterfile /usr/local/
-
-# Add the ability to troubleshoot using Curl
-#RUN apk update; apk add curl
-
-#RUN apt-get update; apt-get install netstat
 
 ENTRYPOINT ["sh", "/usr/entrypoint.sh"]

@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 # moves to workingdirectory to store the large amount of test files for each run
+set -e
 cd ${ENV}
 
 #Runs blazemeter taurus wich executes whats in the config.yaml and points jmeter that was copied across
