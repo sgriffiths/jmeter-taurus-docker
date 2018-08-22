@@ -20,7 +20,7 @@ COPY /bzt_file /root
 COPY /pt /usr/
 COPY /uat /usr/
 COPY /dev /usr/
-COPY /entrypoint.sh /usr
+COPY /entrypoint.sh /usr/
 RUN mkdir -p /usr/logs
 
 # Copy Jmeter 4.0.2 to local directory in Docker container

@@ -21,7 +21,7 @@ services:
         soft: 999999
         hard: 999999
     volumes:
-      - ./pt/workingdirectory:/usr/pt/workingdirectory/
+      - ./pt/workingdirectory:/usr/pt/
   uat:
     build:
       context: .

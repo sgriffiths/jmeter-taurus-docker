@@ -5,3 +5,4 @@ taurus/pt/scripts/
 taurus/pt/workingdirectory/**/
 taurus/uat/workingdirectory/*
 taurus/pt/workingdirectory/jmeter.log
+pt/workingdirectory/
