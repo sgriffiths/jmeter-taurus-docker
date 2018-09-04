@@ -10,7 +10,7 @@ git clone https://github.com/sgriffiths/jmeter-taurus-docker.git && cd jmeter-ta
 ### To Run:
 docker-compose run {env}
 
-Ie docker-compose run dev
+Ie docker-compose run pt
 
 ### Enviroments available:
 dev, uat, pt
