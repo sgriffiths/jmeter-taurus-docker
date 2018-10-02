@@ -8,16 +8,20 @@ Docker and git installed
 git clone https://github.com/sgriffiths/jmeter-taurus-docker.git && cd jmeter-taurus-docker
 
 ### To Run:
+docker-compose up --build {env}
+OR
 docker-compose run {env}
-
-Ie docker-compose run pt
 
 ### Enviroments available:
 dev, uat, pt
 
 ### Info:
-Uses Jmeter 4.0.2
-also uses the https://hub.docker.com/r/scottyg/jmeter-taurus-elastic/ docker image
+Uses Jmeter 5.0
+
+### With the following plugins:
+jmeter-plugins-casutg-2.5.jar
+jmeter-plugins-manager-1.3.jar
+jmeter.backendlistener.elasticsearch-2.5.1.jar
 
 ### To run manually:
 BZT:\
@@ -29,7 +33,7 @@ cd /pt/workingdirectory
 bzt ../config.yaml -gui
 
 ### Jmeter Non Gui: 
-/jmeterfile/apache-jmeter-4.0.2/bin/jmeter -n -t pt/scripts/testscript.jmx
+/jmeterfile/apache-jmeter-5.0/bin/jmeter -n -t pt/scripts/testscript.jmx
 
 ### Jmeter with GUI: 
-./jmeterfile/apache-jmeter-4.0.2/bin/jmeter -t pt/scripts/testscript.jmx
+./jmeterfile/apache-jmeter-5.0/bin/jmeter -t pt/scripts/testscript.jmx
