@@ -19,8 +19,8 @@ dev, uat, pt
 Uses Jmeter 5.0
 
 ### With the following plugins:
-jmeter-plugins-casutg-2.5.jar
-jmeter-plugins-manager-1.3.jar
+jmeter-plugins-casutg-2.5.jar \
+jmeter-plugins-manager-1.3.jar \
 jmeter.backendlistener.elasticsearch-2.5.1.jar
 
 ### To run manually:
