@@ -23,6 +23,7 @@ COPY /entrypoint.sh /usr/
 RUN mkdir -p /usr/logs
 
 # Copy Jmeter 4.0.2 to local directory in Docker container
-COPY jmeterfile /usr/local/
+ADD jmeterfile/apache-jmeter-5.0.tgz /usr/local/
+COPY plugins /usr/local/apache-jmeter-5.0/lib/ext
 
 ENTRYPOINT ["sh", "/usr/entrypoint.sh"]
